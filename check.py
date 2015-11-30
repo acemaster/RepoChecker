@@ -17,7 +17,16 @@ for path in repos:
 
 print str(repos_notuptodate)+" out of "+str(no_of_repos)+" need to be pulled"
 if len(repos_to_pull) != 0:
-	for repo in repos_to_pull:
-		print repo
-
-
+	while 1:
+		print "What do you want to do now?"
+		print "1. Pull the changes to these repos\n2. Check your changes on these repos\n 3. Exit:"
+		l=raw_input("Enter your choice")
+		l=int(l)
+		if l < 3:
+			# menu(l,repos_to_pull)
+		elif l == 3:
+			exit()
+		else:
+			print "Sorry wrong choice Try again"
+else:
+	print "Everything up to date :)"
