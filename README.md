@@ -10,3 +10,4 @@ Check if any of your repos need pull and tell you which ones
 
 2.python check.py
 
+#this is a check for readme conflicts
